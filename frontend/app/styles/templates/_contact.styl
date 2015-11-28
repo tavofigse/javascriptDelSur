@@ -1,0 +1,58 @@
+.browser
+  display flex
+  flex-direction column
+  margin 0 1vw
+  min-height 75vh
+  border-right solid $color-medium-gray 2px
+  border-bottom solid $color-medium-gray 2px
+  border-radius 4px
+  background white
+
+
+.tabs
+  background $color-dark-gray
+  display flex
+  justify-content flex-start
+
+  &-item
+    font-size 0.7rem
+    margin 0 -1rem 0 0
+    padding 0.2rem 1.5rem
+
+    border solid 1px $color-medium-gray
+    border-radius 25px 25px 0 0
+
+    color $color-white
+    background $color-dark-gray
+
+
+.direction-bar
+  background $color-dark-gray
+  border-color $color-light-gray
+  border-width 1px
+  border-style solid
+  color $color-black
+  padding .1rem
+
+  &-item
+    display none
+    margin .2rem
+    margin-left 3rem
+    padding .2rem
+    padding-left .2rem
+    font-size .7rem
+    text-transform lowercase
+    background $color-white
+    border-radius 3px
+
+    &.active
+      display block
+
+
+.web-content
+  background green
+  padding 2rem
+  min-height 50vh
+
+  &-item
+    background blue
