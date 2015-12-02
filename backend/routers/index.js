@@ -10,10 +10,10 @@ module.exports = ((express, app) => {
     .get(PostsController.findAll)
     .post(PostsController.add);
 
-  // posts.route('/posts/:id')
-  //   .get(PostsController.findById)
-  //   // .put(PostsController.update)
-  //   // .delete(PostsController.delete);
+  posts.route('/posts/:id')
+    .get(PostsController.findById)
+    .put(PostsController.update)
+    .delete(PostsController.delete);
 
   app.use('/api', posts);
 });
